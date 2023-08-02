@@ -4,6 +4,7 @@ import '../src/css/bootstrap.css';
 import '../src/css/style.css';
 import '../src/css/responsive.css';
 import 'bootstrap';
+// import '../src/js/custom'
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -12,9 +13,6 @@ root.render(
   <BrowserRouter>
   <React.StrictMode>
     <App />
-    <script type="text/javascript" src="../src/js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="../src/js/bootstrap.js"></script>
-  <script type="text/javascript" src="../src/js/custom.js"></script>
   </React.StrictMode>
   </BrowserRouter>
 );

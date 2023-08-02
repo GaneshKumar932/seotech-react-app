@@ -25,6 +25,7 @@ const Service = () => {
   return (
     <React.Fragment>
         {/* <!-- service section --> */}
+        <div class="sub_page">
         <div className="hero_area">
         <Header/>
         </div>
@@ -374,6 +375,7 @@ const Service = () => {
     </div>
 
   </section>
+  </div>
   {/* <!-- end client section --> */}
     </React.Fragment>
   )

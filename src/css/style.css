@@ -145,7 +145,7 @@ a:focus {
   z-index: 99999;
 }
 
-.navbar-expand-lg .navbar-collapse {
+.navbar-expand-lg . {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;

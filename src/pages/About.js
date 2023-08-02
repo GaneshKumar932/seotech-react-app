@@ -7,6 +7,7 @@ const About = () => {
     <React.Fragment>
         
   {/* <!-- about section --> */}
+  <div class="sub_page">
   <div class="hero_area">
   <Header/>
   </div>
@@ -38,7 +39,7 @@ const About = () => {
     </div>
   </div>
 </section>
-
+</div>
 {/* <!-- end about section --> */}
     </React.Fragment>
   )
