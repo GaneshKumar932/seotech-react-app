@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Service from './pages/Service';
 import Fooder from './pages/Fooder';
 import { Route, Routes } from 'react-router-dom';
+import Users from './pages/UserDetails';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/service' element={<Service/>} />
       </Routes>
+      <Users/>
       <Fooder/>
      
     </React.Fragment>

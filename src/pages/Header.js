@@ -33,6 +33,9 @@ const Header = () => {
                   <Link className="nav-link" to="/service"> Services </Link>
                 </li>
                 <li className="nav-item">
+                    <a className="nav-link" href="#usersdata"> Users </a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="#contactLink">Contact Us</a>
                 </li>
               </ul>
