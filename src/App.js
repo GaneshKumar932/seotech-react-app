@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/service' element={<Service/>} />
       </Routes>
-      <Users/>
+      {/* <Users/> */}
       <Fooder/>
      
     </React.Fragment>

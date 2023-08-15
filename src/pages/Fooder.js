@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import telephone from '../images/telephone-white.png'
 import twitter from '../images/info-twitter.png'
 import linkedin from '../images/info-linkedin.png'
@@ -7,12 +7,25 @@ import fb from '../images/info-fb.png'
 import youtube from '../images/info-youtube.png'
 import Contact from './Contact'
 import { Link } from 'react-router-dom'
+import '../js/bootstrap'
 
 
 const Fooder = () => {
+  useEffect(() => {
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    return () => {
+      document.getElementById("displayYear").innerHTML = currentYear;
+    }
+  }, ["#displayYear"])
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
    <React.Fragment>
-    <div class="footer_bg">
+    <div className="footer_bg">
         <Contact/>
          {/* <!-- info section --> */}
     <section className="info_section layout_padding2">
@@ -35,17 +48,17 @@ const Fooder = () => {
                 BASIC LINKS
               </h4>
               <ul className="  ">
-                <li className=" active">
-                <Link className="nav-link" to="/" >Home <span className="sr-only">(current)</span></Link>
+                <li onClick={{scrollToTop}} className="nav-item active">
+                <Link  className="nav-link" to="/" >Home <span className="sr-only">(current)</span></Link>
                 </li>
-                <li className="">
-                  <a className="" href="about.html"> About</a>
+                <li className="nav-item">
+                <Link onClick={{scrollToTop}} className="nav-link" to="/about"> About</Link>
                 </li>
-                <li className="">
-                  <a className="" href="service.html"> Services </a>
+                <li className="nav-item">
+                  <Link onClick={{scrollToTop}} className="nav-link" to="/service"> Services </Link>
                 </li>
-                <li className="">
-                  <a className="" href="#contactLink">Contact Us</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="#contactLink">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -55,7 +68,7 @@ const Fooder = () => {
               <h4>
                 CONTACT DETAILS
               </h4>
-              <a href="">
+              <a href="#">
                 <div className="img-box">
                   <img src={telephone} width="12px" alt=""/>
                 </div>
@@ -63,7 +76,7 @@ const Fooder = () => {
                   +01 1234567890
                 </p>
               </a>
-              <a href="">
+              <a href="#">
                 <div className="img-box">
                   <img src={envelobe} width="18px" alt=""/>
                 </div>
@@ -85,16 +98,16 @@ const Fooder = () => {
                 </button>
               </form>
               <div className="social_box">
-                <a href="">
+                <a href="#">
                   <img src={fb} alt=""/>
                 </a>
-                <a href="">
+                <a href="#">
                   <img src={twitter} alt=""/>
                 </a>
-                <a href="">
+                <a href="#">
                   <img src={linkedin} alt=""/>
                 </a>
-                <a href="">
+                <a href="#">
                   <img src={youtube} alt=""/>
                 </a>
               </div>
