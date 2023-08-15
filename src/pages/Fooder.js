@@ -48,14 +48,14 @@ const Fooder = () => {
                 BASIC LINKS
               </h4>
               <ul className="  ">
-                <li onClick={{scrollToTop}} className="nav-item active">
+                <li onClick={scrollToTop} className="nav-item active">
                 <Link  className="nav-link" to="/" >Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                <Link onClick={{scrollToTop}} className="nav-link" to="/about"> About</Link>
+                <Link onClick={scrollToTop} className="nav-link" to="/about"> About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link onClick={{scrollToTop}} className="nav-link" to="/service"> Services </Link>
+                  <Link onClick={scrollToTop} className="nav-link" to="/service"> Services </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#contactLink">Contact Us</a>
